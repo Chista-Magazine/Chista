@@ -1,40 +1,60 @@
 <!doctype html>
-<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="چیستا؛ مجلهٔ اندیشه و جامعه، از پرسش تا شناخت. پرسش‌های هفته، مسیرهای یادگیری و کتابخانهٔ پژوهشی.">
-<title>چیستا | از پرسش تا شناخت</title><link rel="stylesheet" href="style.css"><script defer src="home-content.js"></script></head>
-<body class="homepage">
-<header class="home-header">
- <a class="masthead" href="index.html" aria-label="چیستا، صفحهٔ اصلی"><img src="assets/chista-bird.png" alt="" class="masthead-bird"><span class="masthead-name">چیستا<small>مجلهٔ اندیشه و جامعه</small></span></a>
- <nav class="primary-nav" aria-label="فهرست اصلی سایت">
-  <a class="current" href="index.html">خانه</a><a href="question.html">پرسش هفته</a><a href="essays.html">مقاله‌ها</a><a href="paths.html">مسیر یادگیری</a><a href="library.html">کتابخانه</a><a href="about.html">درباره</a>
- </nav>
+<html lang="fa" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="چیستا؛ از پرسش تا شناخت — مجلهٔ اندیشه و جامعه">
+<meta name="theme-color" content="#173b2b">
+<title>چیستا | از پرسش تا شناخت</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="home-content.js"></script>
+<script defer src="chista-ui.js"></script>
+</head><body class="original-home">
+<!-- Desktop: the ORIGINAL image is intentionally preserved pixel-for-pixel. Link regions and
+     configurable text layers sit ABOVE it. The image's original font, icons and artwork remain. -->
+<main class="desktop-site" id="top"><div class="visual-shell" dir="ltr">
+<img class="screen-image" src="assets/chista-original.png" width="1536" height="1024" alt="چیستا؛ طرح اصلی مجلهٔ اندیشه و جامعه، پرسش هفته، مسیرهای یادگیری، کتابخانه و مقاله‌ها">
+<!-- Main navigation with the same positions as the original design. -->
+<a class="hotspot" style="left:63.2%;top:0;width:7.1%;height:7.9%" href="index.html" aria-label="خانه"></a>
+<a class="hotspot" style="left:54%;top:0;width:8.7%;height:7.9%" href="question.html" aria-label="پرسش هفته"></a>
+<a class="hotspot" style="left:46.8%;top:0;width:6.5%;height:7.9%" href="essays.html" aria-label="مقاله‌ها"></a>
+<a class="hotspot" style="left:36.6%;top:0;width:9.5%;height:7.9%" href="paths.html" aria-label="مسیر یادگیری"></a>
+<a class="hotspot" style="left:29.4%;top:0;width:6.2%;height:7.9%" href="library.html" aria-label="کتابخانه"></a>
+<a class="hotspot" style="left:23%;top:0;width:6.1%;height:7.9%" href="about.html" aria-label="درباره"></a>
+<!-- Original icons: search, bookmark, moon. Their pixel artwork is in the screenshot; buttons are invisible hit regions. -->
+<button class="tool-hotspot search-hotspot" style="left:2.65%;top:1.2%;width:3.3%;height:5.8%" type="button" data-chista-action="search" aria-label="جست‌وجو در چیستا" title="جست‌وجو"></button>
+<button class="tool-hotspot bookmark-hotspot" style="left:6.1%;top:1.2%;width:3.2%;height:5.8%" type="button" data-chista-action="bookmark" aria-label="نشانک‌گذاری سایت" title="ذخیرهٔ سایت"></button>
+<button class="tool-hotspot night-hotspot" style="left:9.75%;top:1.2%;width:3%;height:5.8%" type="button" data-chista-action="night" aria-label="حالت مطالعهٔ شب" title="حالت شب"></button>
+<!-- Learning pathways: icon positions on the RIGHT are untouched in the original picture. -->
+<a class="hotspot" style="left:3.7%;top:49.15%;width:24%;height:5.6%" href="paths.html#degree-1" aria-label="اندیشهٔ سیاسی"></a>
+<a class="hotspot" style="left:3.7%;top:55.5%;width:24%;height:5.7%" href="paths.html#degree-2" aria-label="استعمار و جهان معاصر"></a>
+<a class="hotspot" style="left:3.7%;top:62%;width:24%;height:5.6%" href="paths.html#degree-1-course-4" aria-label="توسعه و نهادها"></a>
+<a class="hotspot" style="left:3.7%;top:68.55%;width:24%;height:5.5%" href="paths.html#degree-1-course-1" aria-label="آزادی و حقوق انسان"></a>
+<a class="hotspot" style="left:10.3%;top:75.6%;width:10.6%;height:4.4%" href="paths.html" aria-label="همهٔ مسیرها"></a>
+<!-- Main weekly question and bottom cards -->
+<a class="hotspot" style="left:30.2%;top:41%;width:67%;height:34%" href="question.html" aria-label="خواندن پرسش هفته"></a>
+<a class="hotspot" style="left:2.6%;top:83%;width:30.7%;height:15.3%" href="library.html" aria-label="کتابخانه"></a>
+<a class="hotspot" style="left:34.7%;top:83%;width:30.7%;height:15.3%" href="paths.html" aria-label="مسیر یادگیری"></a>
+<a class="hotspot" style="left:66.8%;top:83%;width:30.7%;height:15.3%" href="essays.html" aria-label="مقاله‌ها و تحلیل‌ها"></a>
+<!-- Editable heading overlays appear only when a value in home-content.js has changed.
+     When values are unchanged, the FULL original design stays visible. -->
+<div class="editable-overlays" id="chista-overlays" aria-live="polite"></div>
+</div></main>
+
+<!-- On narrow mobile screens, use readable responsive text with the original image assets. -->
+<div class="mobile-site restored-mobile">
+<header class="mobile-header original-mobile-top">
+ <a href="index.html" class="mobile-brand"><span class="mobile-logo" data-edit="heroTitle">چیستا</span><span class="mobile-caption">مجلهٔ اندیشه و جامعه</span></a>
+ <div class="mobile-tools">
+  <button type="button" data-chista-action="search" aria-label="جست‌وجو"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+  <button type="button" data-chista-action="bookmark" aria-label="نشانک"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg></button>
+  <button type="button" data-chista-action="night" aria-label="حالت شب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5A8 8 0 0 1 8.5 4 8.6 8.6 0 1 0 20 15.5z"/></svg></button>
+ </div>
 </header>
-<section class="home-hero"><div class="hero-statue" aria-hidden="true"></div><div class="hero-tree" aria-hidden="true"></div><div class="hero-center">
- <h1 data-edit="heroTitle">چیستا</h1><p class="hero-subtitle" data-edit="heroSubtitle">از پرسش تا شناخت</p>
- <div class="hero-ornament">✣</div><p class="hero-topics" data-edit="heroTopics">اندیشه، تاریخ، سیاست، استعمار و توسعه</p>
- </div></section>
-<main class="home-content">
- <div class="home-top-grid">
-  <article class="weekly-feature"><div class="weekly-art" aria-hidden="true"></div><div class="weekly-text">
-   <div class="weekly-label" data-edit="featuredLabel">پرسش هفته</div>
-   <h2 data-edit="featuredTitle">چرا جوامع پس از استعمار به‌سختی توسعه می‌یابند؟</h2>
-   <p data-edit="featuredDescription">چند مسیر برای اندیشیدن به میراث استعمار، نهادها و توسعه؛ بدون پاسخ از پیش تعیین‌شده</p>
-   <a class="action" href="question.html"><span data-edit="featuredButton">خواندن این مطلب</span> ←</a>
-  </div></article>
-  <aside class="home-pathway"><h2 data-edit="pathHeading">مسیرهای یادگیری</h2>
-    <div class="home-pathway-links">
-     <a href="paths.html#degree-1"><span data-edit="pathOne">اندیشهٔ سیاسی</span><span class="path-symbol" aria-hidden="true">♜</span></a>
-     <a href="paths.html#degree-2"><span data-edit="pathTwo">استعمار و جهان معاصر</span><span class="path-symbol" aria-hidden="true">◎</span></a>
-     <a href="paths.html#degree-1-course-4"><span data-edit="pathThree">توسعه و نهادها</span><span class="path-symbol" aria-hidden="true">▥</span></a>
-     <a href="paths.html#degree-1-course-1"><span data-edit="pathFour">آزادی و حقوق انسان</span><span class="path-symbol" aria-hidden="true">⚖</span></a>
-    </div><a class="home-all-paths" href="paths.html">همهٔ مسیرها ←</a>
-  </aside>
- </div>
- <div class="home-bottom-grid">
-  <a class="home-teaser teaser-essays" href="essays.html"><div class="teaser-art" aria-hidden="true"></div><div class="teaser-copy"><h2 data-edit="essaysHeading">مقاله‌ها و تحلیل‌ها</h2><p data-edit="essaysDescription">نوشته‌های مستقل و مستند</p><span class="teaser-arrow">←</span></div></a>
-  <a class="home-teaser teaser-pathway" href="paths.html"><div class="teaser-art" aria-hidden="true"></div><div class="teaser-copy"><h2 data-edit="pathwayHeading">مسیر یادگیری</h2><p data-edit="pathwayDescription">دوره‌های منظم، از مبانی تا تحلیل</p><span class="teaser-arrow">←</span></div></a>
-  <a class="home-teaser teaser-library" href="library.html"><div class="teaser-art" aria-hidden="true"></div><div class="teaser-copy"><h2 data-edit="libraryHeading">کتابخانه</h2><p data-edit="libraryDescription">جزوه‌ها، کتاب‌ها و منابع پژوهشی</p><span class="teaser-arrow">←</span></div></a>
- </div>
-</main>
-<footer class="footer">چیستا — از پرسش تا شناخت · <a href="paths.html">مسیرهای یادگیری</a> · <a href="library.html">کتابخانه</a></footer>
+<nav class="mobile-nav" aria-label="فهرست اصلی"><a href="index.html">خانه</a><a href="question.html">پرسش هفته</a><a href="paths.html">مسیر یادگیری</a><a href="essays.html">مقاله‌ها</a><a href="library.html">کتابخانه</a><a href="about.html">درباره</a></nav>
+<section class="mobile-hero"><h1 data-edit="heroTitle">چیستا</h1><p data-edit="heroSubtitle">از پرسش تا شناخت</p><small data-edit="heroTopics">اندیشه، تاریخ، سیاست، استعمار و توسعه</small></section>
+<main class="mobile-content">
+<section class="mobile-panel mobile-feature"><span class="pill" data-edit="featuredLabel">پرسش هفته</span><h2 data-edit="featuredTitle">چرا جوامع پس از استعمار به‌سختی توسعه می‌یابند؟</h2><p data-edit="featuredDescription">مروری بر میراث استعمار، نهادها و موانع توسعه در جهان امروز</p><a class="action" href="question.html"><span data-edit="featuredButton">خواندن مقاله</span> ←</a></section>
+<section class="mobile-panel"><h2 data-edit="pathHeading">مسیرهای یادگیری</h2><ul class="path-links"><li><a href="paths.html#degree-1"><span data-edit="pathOne">اندیشهٔ سیاسی</span> <span class="path-small-icon">♜</span></a></li><li><a href="paths.html#degree-2"><span data-edit="pathTwo">استعمار و جهان معاصر</span> <span class="path-small-icon">◎</span></a></li><li><a href="paths.html#degree-1-course-4"><span data-edit="pathThree">توسعه و نهادها</span> <span class="path-small-icon">▥</span></a></li><li><a href="paths.html#degree-1-course-1"><span data-edit="pathFour">آزادی و حقوق انسان</span> <span class="path-small-icon">⚖</span></a></li></ul><a class="action" href="paths.html">همهٔ مسیرها ←</a></section>
+<div class="mobile-cards"><a class="mobile-mini" href="library.html"><img src="assets/card-library.webp" alt="کتابخانه"><span data-edit="libraryHeading">کتابخانه</span><small data-edit="libraryDescription">کتاب‌ها، مقاله‌های پژوهشی و منابع آموزشی</small></a><a class="mobile-mini" href="paths.html"><img src="assets/card-pathways.webp" alt="مسیرهای یادگیری"><span data-edit="pathwayHeading">مسیر یادگیری</span><small data-edit="pathwayDescription">مطالعهٔ مرحله به مرحله برای یادگیری عمیق‌تر</small></a><a class="mobile-mini" href="essays.html"><img src="assets/card-articles.webp" alt="مقاله‌ها و تحلیل‌ها"><span data-edit="essaysHeading">مقاله‌ها و تحلیل‌ها</span><small data-edit="essaysDescription">نگاهی نو به مسائل مهم جامعه و جهان</small></a></div>
+</main></div>
+<footer class="footer">چیستا — از پرسش تا شناخت | <a href="lesson-fanon.html">درس فانون</a></footer>
 </body></html>

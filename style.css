@@ -92,3 +92,78 @@
 .homepage .weekly-text{width:61%;margin-left:5%;margin-right:auto}
 @media(max-width:1100px){.homepage .weekly-text{width:68%;margin-left:1%;}}
 @media(max-width:780px){.homepage .weekly-art{width:100%;opacity:.28}.homepage .weekly-feature:after{background:rgba(248,236,216,.61)}.homepage .weekly-text{width:100%;margin:0;padding:32px 19px}.homepage .weekly-text h2{font-size:1.6rem}.homepage .weekly-feature{min-height:365px}}
+
+
+/* CHISTA ORIGINAL HOMEPAGE — visual screenshot is unchanged, no alternative font or icons. */
+.original-home { background: #f8efdf; }
+.original-home .desktop-site { display:block; }
+.original-home .visual-shell {position:relative; max-width:1536px; margin:0 auto; overflow:hidden; isolation:isolate; container-type:inline-size;}
+.original-home .visual-shell .screen-image {display:block; width:100%; height:auto;}
+.original-home .hotspot {position:absolute; z-index:4; display:block; text-decoration:none; border-radius:8px;}
+.original-home .hotspot:hover {outline:2px solid rgba(218,174,105,.78);outline-offset:-2px;background:rgba(255,255,255,.055)}
+.original-home .tool-hotspot {position:absolute;z-index:5;border:0;background:transparent;cursor:pointer;border-radius:12px;padding:0;}
+.original-home .tool-hotspot:hover,.original-home .tool-hotspot:focus-visible {outline:2px solid #dfb97c; outline-offset:0; background:rgba(255,255,255,.1)}
+.original-home .editable-overlays {position:absolute;inset:0;pointer-events:none;z-index:3;direction:rtl;}
+.original-home .editable-surface {position:absolute;display:flex;justify-content:center;align-items:center;text-align:center;line-height:1.45;padding:.2% 1%;font-family:'Noto Naskh Arabic',Vazirmatn,Tahoma,serif;overflow:hidden;color:#10150f;}
+/* Background patches apply ONLY to edited fields; default image appears unchanged. */
+.original-home .ov-hero-title{left:35%;top:10.9%;width:30%;height:11.2%;color:#173b2b;font-weight:800;font-size:6.3cqw;background:linear-gradient(95deg,#f4e4c9 0%,#f2e0c6 48%,#f0dfc5 100%);border-radius:12px;}
+.original-home .ov-hero-subtitle{left:38%;top:22.3%;width:24%;height:6.5%;font-size:2.6cqw;font-weight:700;background:linear-gradient(100deg,#f2dfc5,#f3e1c7);border-radius:12px;}
+.original-home .ov-hero-topics{left:35%;top:29.9%;width:30%;height:4.8%;font-size:1.6cqw;background:#f1ddc1;border-radius:8px;}
+.original-home .ov-feature-label{left:56.4%;top:44.4%;width:12%;height:5%;font-size:1.45cqw;font-weight:800;border-radius:30px;background:#e7b876;}
+.original-home .ov-feature-title{left:37.5%;top:50%;width:33%;height:12.1%;font-size:2.65cqw;font-weight:800;line-height:1.35;background:linear-gradient(90deg,#f6e8d1,#f4e3cc 70%,#f2dfc4);border-radius:10px;}
+.original-home .ov-feature-desc{left:36.8%;top:62%;width:34%;height:4.6%;font-size:1.35cqw;background:#f4e3ca;border-radius:7px;}
+.original-home .ov-feature-button{left:56.3%;top:69.1%;width:12.5%;height:4.3%;font-size:1.3cqw;font-weight:700;color:white;border-radius:35px;background:#214b37;}
+.original-home .ov-path-heading{left:13.5%;top:41.7%;width:14.1%;height:5.5%;font-size:1.7cqw;font-weight:700;color:#fff7e7;background:linear-gradient(110deg,#193e2f,#1c4736);border-radius:5px;}
+.original-home .ov-path-one,.original-home .ov-path-two,.original-home .ov-path-three,.original-home .ov-path-four {left:7.2%;width:16.2%;height:4.2%;font-size:1.4cqw;font-weight:600;background:#f9eedb;border-radius:8px;}
+.original-home .ov-path-one{top:50.1%}.original-home .ov-path-two{top:56.7%}.original-home .ov-path-three{top:63.2%}.original-home .ov-path-four{top:69.7%}
+.original-home .ov-library-heading,.original-home .ov-pathway-heading,.original-home .ov-essays-heading{top:84.7%;height:4.7%;font-weight:800;font-size:1.55cqw;background:#f3e3c9;border-radius:6px;}
+.original-home .ov-library-heading{left:20.2%;width:9.1%}.original-home .ov-pathway-heading{left:50.5%;width:11.7%}.original-home .ov-essays-heading{left:79%;width:14.1%}
+.original-home .ov-library-desc,.original-home .ov-pathway-desc,.original-home .ov-essays-desc{top:88.7%;height:6%;font-weight:500;font-size:1cqw;background:#f3e4cc;border-radius:7px;}
+.original-home .ov-library-desc{left:18.7%;width:13.8%}.original-home .ov-pathway-desc{left:50.6%;width:13.5%}.original-home .ov-essays-desc{left:79.4%;width:14.6%}
+/* Mobile uses responsive live text and original matching imagery. */
+.original-home .mobile-site {display:none}
+.restored-mobile .mobile-brand{text-decoration:none;color:inherit;display:flex;flex-direction:column;}
+.restored-mobile .original-mobile-top{background:#eadbc1;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.restored-mobile .mobile-tools{display:flex;align-items:center;gap:8px;}
+.restored-mobile .mobile-tools button{background:#1e4835;color:#f9ebd5;border:0;border-radius:9px;width:36px;height:36px;display:grid;place-items:center;cursor:pointer;}
+.restored-mobile .mobile-tools svg,.chista-inner-tools svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;width:21px;height:21px;}
+.restored-mobile .mobile-panel .path-links a{display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
+.restored-mobile .mobile-cards .mobile-mini{text-decoration:none;color:var(--green)}
+.restored-mobile .mobile-cards .mobile-mini span{display:block;font-weight:800;text-align:center;padding:4px 10px 0}
+.restored-mobile .mobile-cards .mobile-mini small{display:block;text-align:center;padding:0 14px 10px;color:#624f31}
+.restored-mobile .path-small-icon{font-size:1.5rem;color:#896737;}
+@media(max-width:780px){
+ .original-home .desktop-site{display:none;}
+ .original-home .mobile-site{display:block;}
+}
+/* Global search and the bookmark helper, accessible on all pages. */
+.chista-modal-backdrop{position:fixed;inset:0;background:rgba(10,24,17,.7);z-index:5000;display:none;align-items:flex-start;justify-content:center;padding:10vh 18px 20px;direction:rtl;}
+.chista-modal-backdrop.open{display:flex}
+.chista-modal{background:#fff9ef;color:#163a2b;width:min(580px,100%);border-radius:16px;padding:26px 26px 22px;box-shadow:0 25px 70px rgba(0,0,0,.25);line-height:1.9;}
+.chista-modal h2{font-size:1.35rem;margin:0 0 8px}
+.chista-modal p{margin:8px 0 12px;font-size:.95rem;}
+.chista-modal input{display:block;width:100%;padding:10px 14px;border:1px solid #ae9570;border-radius:8px;font:inherit;outline-color:#2e664b;background:#fff;}
+.chista-close{float:left;border:0;background:#ecdfc9;color:#163a2b;cursor:pointer;border-radius:8px;padding:1px 11px;font-size:1.6rem;line-height:1.3}
+.chista-results{list-style:none;padding:0;margin:15px 0 0;max-height:44vh;overflow-y:auto;}
+.chista-results li a{text-decoration:none;color:#193d2f;display:block;padding:10px 8px;border-top:1px solid #e8dccb;}
+.chista-results li a:hover{background:#f1e5ce}
+.chista-results strong{display:block}
+.chista-results small{display:block;line-height:1.4;color:#765d3c}
+.chista-inner-tools{display:flex;gap:5px;align-items:center;}
+.chista-inner-tools button{width:32px;height:32px;border:1px solid #b4a18355;border-radius:8px;background:transparent;color:#f9ecda;cursor:pointer;display:grid;place-items:center;}
+.chista-inner-tools button:hover{background:#ffffff24;}
+html.chista-night .original-home .screen-image{filter:brightness(.73) saturate(.8)}
+html.chista-night body {background:#15221b;color:#eaddc4;}
+html.chista-night .main-content .section-card,html.chista-night .main-content .library-item,html.chista-night .route-tile{background:#26392e;color:#eee1c6;border-color:#536049}
+html.chista-night .main-content h2,html.chista-night .main-content h3,html.chista-night .mini-link{color:#d9bc86}
+html.chista-night .read-hero{background:#1e3226;color:#f5eddf}
+html.chista-night .read-hero .lede{color:#decfab}
+html.chista-night .original-home .mobile-panel,html.chista-night .original-home .mobile-mini{background:#28392e;color:#f4ecd9}
+@media(max-width:780px){.chista-inner-tools{justify-content:center;margin-top:9px}}
+
+/* Keep the original illustrated mobile cards uncluttered (titles are already printed in the illustration). */
+.restored-mobile .mobile-cards .mobile-mini span,
+.restored-mobile .mobile-cards .mobile-mini small {display:none;}
+.restored-mobile .mobile-cards .mobile-mini.has-custom-label span,
+.restored-mobile .mobile-cards .mobile-mini.has-custom-label small {display:block;}
+.restored-mobile .mobile-panel .path-links a{flex-direction:row-reverse;}
